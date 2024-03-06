@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*bar icon*/
+.bar-icon{
+    display: none !important;
+   margin-right:0 8px;
+}
+
+/*hide sidebar*/
+
+.sidebar_off{
+    width:0px !important;
+    transition:0.5s;
+    overflow:hidden;
+    padding:0 !important;
+}
+
+.main-body_full{
+    margin: 0 !important;
+    width: 100% !important;
+    transition:0.5s;
+}
+
+.head{
+    /* position: fixed; */
+    width:100%;
+    display: flex;
+    border: 1.4px solid rgba(213, 203, 203, 0.373);
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.products{
+    display:flex;
+    font-size: 0.5cm;
+    font-weight: 600;
+}
+.product-name{
+    margin-bottom: 0%;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search-item{
+    padding: 5px;
+    width: 6cm;
+    border-radius: 5px;
+    border: 2px solid rgba(213, 203, 203, 0.441);
+}
+.icon{
+    border: 2px solid rgba(213, 203, 203, 0.441);
+    margin: 0px 5px;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: rgba(0, 0, 0, 0.916);
+    color: white;
+}
+
+.main-body {
+    margin-left:300px;
+    width: calc(100% - 300px);
+    padding:12px 12px;
+    transition:0.5s;
+}
+
+
+.aside{
+    position:fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 300px;
+    padding: 8px;
+    transition:0.5s;
+    border: 1px solid rgba(213, 203, 203, 0.441);
+    border-radius: 5px;
+}
+.logo-item{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 4px;
+    background-color: black;
+    color: white;
+    padding: 8px 4px;
+    border-radius: 5px;
+    margin-bottom: 0%;
+}
+.INC{
+    font-size: 15px;
+    margin-bottom: 0%;
+}
+.innovatehub{
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+.team{
+    margin-top: 15px;
+}
+#team-ul{
+    list-style: none;
+    padding-left: 0%;
+}
+.team-li{
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 1px solid rgba(39, 23, 23, 0.112);
+    margin: 3px 0px;
+    padding: 4px 2px;
+    border-radius: 5px;
+}
+.team-li:hover{
+    background-color: rgba(24, 22, 22, 0.053);
+}
+#create{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    cursor: pointer;
+}
+#create-item{
+    display: none;
+}
+#item, #f-item{
+    padding: 5px;
+    width: 6cm;
+    border-radius: 5px;
+    border: 1px solid rgba(213, 203, 203, 0.441);
+    margin-top: 4px;
+}
+.add{
+    padding: 5px 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.add:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.folder{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+#folder-item{
+    display: none;
+}
+.folder-name{
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.folder-list-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.invite{
+    margin-top: 5cm;
+}
+.option{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+
+.main-feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+}
+.feature{
+    display: flex;
+    gap: 10px;
+}
+.feature-name{
+    border: 1px solid rgba(0, 0, 0, 0.321);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.feature-name:hover{
+    background-color: rgba(0, 0, 0, 0.132);
+}
+.brand{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-weight: 600;
+}
+.b-name{
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+.product-ul{
+    padding-left: 0%;
+}
+.product-li{
+    list-style: none;
+    border-radius: 5px;
+    padding: 4px;
+}
+.product-li:hover{
+    background-color: rgba(98, 95, 95, 0.175);
+}
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.product-data{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.product-des{
+    font-weight: 600;
+}
+.product-cate{
+    text-transform: capitalize;
+}
+.product-tag{
+    text-transform: capitalize;
+}
+
+
+
+@media screen and (max-width: 762px) {
+    aside{
+        display: none;
+    }
+    .aside{
+        height:100%;
+        background-color: whitesmoke;
+    }
+    .invite{
+        margin-top: 12cm;
+    }
+
+    .main-body{
+        margin:0 !important;
+        width: 100vh;
+        transition:0.5s;
+    }
+    .bar-icon{
+        display: block !important;
+    }
+    .main-feature{
+        display: none;
+    }
+}
